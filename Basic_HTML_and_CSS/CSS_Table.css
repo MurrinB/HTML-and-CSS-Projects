@@ -1,0 +1,20 @@
+table {
+	border: 3px #006400;
+}
+td:hover {
+	background-color: yellow;
+	color: black;
+}
+tr, th {
+	background-color: black;
+	color: cornsilk;
+}
+tr:nth-child(2), td {
+	background-color: pink;
+	color: white;
+}
+tr:nth-child(3), td {
+	background-color: blue;
+	color: white;
+}
+
