@@ -1,0 +1,207 @@
+/* GILMORE GIRL STYLES */
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: Playfair Display, sans-serif;
+    color: rgb(231, 23, 169);
+    background-color: rgb(252, 159, 224)
+}
+
+h1 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(231, 23, 169);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-countainer {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* ANIMATION OF MENU */
+.menu {
+    color: #ff0000;
+    font: bold 12px/18px Playfair Display;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li {
+    color: rgb(231, 23, 169);
+    background-color: pink;
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid #9d9fa2;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+    border-radius: 6px;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu li:hover {
+    color: rgba(255,255,255,1);
+    background-color: rgb(196, 193, 193);
+}
+
+/* HOME SECTION */
+#home {
+    background: url(./images/background_home.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    color: #fff;
+}
+
+.main-head {
+    text-shadow: 2px 4px 5px rgb(212, 92, 176);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: center;
+    font-family: Playfair Display;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double #fff;
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ACTOR GALLERY */
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: silver;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid black;
+    background-color:rgb(252, 159, 224);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7)
+
+}
+
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 350px;
+    height: 250px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 350px;
+    height: 250px;
+}
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0,0,0,0.5);
+
+}
+
+.white-head {
+    color: #fff;
+    margin-top: 5%;
+}
+
+/* PHOTO OVERLAY TRANSITION*/
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transition: scale(1.1);
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+/* VIDEO ANIMATION */
+iframe {
+    width: 900px;
+    height: 600px;
+    margin: 0px auto;
+}

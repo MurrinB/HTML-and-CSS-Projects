@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<title>Gilmore Girls</title>
+	<title>Gilmore Girls Fans</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="./style_one_page-website.css">
   </head>
   <body>
 	<!-- NAV -->
-	  <div>
-	   <ul>
-		<a href="#home" id="link"><li>HOME</li></a>
-		<a href="#actors"><li>ACTORS</li></a>
-		<a href="#new"><li>NEW</li></a>
-		<a href="#contact"><li>MAILING LIST</li></a>
-	   </ul>
+	  <div class="navbar">
+			<div class="menu-container">
+	   			<ul class="menu">
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#actors"><li>ACTORS</li></a>
+					<a href="#new"><li>NEW</li></a>
+					<a href="#contact"><li>MAILING LIST</li></a>
+	   			</ul>
+			</div>
 	  </div>	
 	<!--END NAV-->
 	<!--HOME-->
-	  <div id="home">
-		<div>
-		  <span>All About Glimore Girls</span>
+		<div id="home">
+			<div class="container">
+				<div class="text-center">
+				  <span class= "main-head">All About Glimore Girls</span>
+				</div>
+			</div>
 		</div>
 	<!--END HOME-->
 	<!--ACTORS-->
-	<section>
-	  <div id="actors">
+	<section id="actors">
+	  <div class="container">
 		<h1>Actors</h1>
-	  	  <div>
+	  	  <div class="flex-container">
 			<!--PHOTO-CONTAINER 1-->
-			<div>
-			  <div>
-				<img src="C:\Users\Britnee Murrin\GitHub\HTML-and-CSS-Projects\One-Page Website\images\Thumb\thumbnail_1.jpg" alt="Lauren Graham">
-				<div>
-				  <h3>Click to Enlarge</h3>
+			<div class="photo-container">
+			  <div class="photo">
+				<img src="./images/Thumb/thumbnail_1.jpg" alt="Lauren Graham">
+				<div class="photo-overlay">
+				  <h3 class="white-head">Click to Enlarge</h3>
 				  <p>Lorelai Gilmore: Lauren Graham</p>
 				</div>
 			  </div>
 			</div>
 			<!--END PHOTO-CONTAINER 1-->
 			<!--PHOTO-CONTAINER 2-->
-			<div>
-			  <div>
-				<img src="C:\Users\Britnee Murrin\GitHub\HTML-and-CSS-Projects\One-Page Website\images\Thumb\thumbnail_2.jpg" alt="Alexis Bledel">
-				<div>
-				  <h3>Click to Enlarge</h3>
+			<div class="photo-container">
+			  <div class="photo">
+				<img src="./images/Thumb/thumbnail_2.jpg" alt="Alexis Bledel">
+				<div class="photo-overlay">
+				  <h3 class="white-head">Click to Enlarge</h3>
 				  <p>Rory Gilmore: Alexis Bledel</p>
 				</div>
 			  </div>
 			</div>
 			<!--END PHOTO-CONTAINER 2-->
 			<!--PHOTO-CONTAINER 3-->
-			<div>
-			  <div>
-				<img src="C:\Users\Britnee Murrin\GitHub\HTML-and-CSS-Projects\One-Page Website\images\Thumb\thumbnail_3.jpg" alt="Scott Patterson">
-				<div>
-				  <h3>Click to Enlarge</h3>
+			<div class="photo-container">
+			  <div class="photo">
+				<img src="./images/Thumb/thumbnail_3.jpg" alt="Scott Patterson">
+				<div class="photo-overlay">
+				  <h3 class="white-head">Click to Enlarge</h3>
 				  <p>Luke Danes: Scott Patterson</p>
 				</div>
 			  </div>
 			</div>
 			<!--END PHOTO-CONTAINER 3-->
 			<!--PHOTO-CONTAINER 4-->
-			<div>
-			  <div>
-				<img src="C:\Users\Britnee Murrin\GitHub\HTML-and-CSS-Projects\One-Page Website\images\Thumb\thumbnail_4.jpg" alt="Kelly Bishop">
-				<div>
-				  <h3>Click to Enlarge</h3>
+			<div class="photo-container">
+			  <div class="photo">
+				<img src="./images/Thumb/thumbnail_4.jpg" alt="Kelly Bishop">
+				<div class="photo-overlay">
+				  <h3 class="white-head">Click to Enlarge</h3>
 				  <p>Emily Gilmore: Kelly Bishop</p>
 				</div>
 			  </div>
@@ -74,25 +80,25 @@
 		</section>
 		<!--END ACTORS-->
 		<!--TRAILER-->
-		<section>
-		  <div id="new">
+		<section id="new">
+		  <div class="video-container">
 			<h1>A Year In The Life Trailer</h1>
-		  	  <div>
-				<iframe width="420" height="315" src="https://www.youtube.com/embed/HvbhPt0z4yE">
+		  	  <div class="flex-container">
+				<iframe src="https://www.youtube.com/embed/HvbhPt0z4yE">
 				</iframe>
 			  </div>
 		  </div>
 		</section>
 		<!--END TRAILER-->
 		<!--CONTACT-->
-		  <section>
-			<div id="contact">
-			  <div>
-			    <h1>Mailing List</h1>
-				<div>
+		  <section id="contact">
+			<div class="container">
+			  <div class="heading">
+			    <h1 class="heading">Mailing List</h1>
+				<div class="lower-heading">
 				  <h2><span>Get on our mailing list for news about Gilmore Girls!</span></h2>
-				  <p>Please provide us with your basic contact information.</p>
-			   <div>
+				  <p class="mail-list-text">Please provide us with your basic contact information.</p>
+			   <div class="form-mailing-list">
 				<form action="" method="post">
 				  <input class="contact" type="text" value="First Name"> 
 				  <input class="contact" type="text" value="Last Name">
@@ -101,7 +107,7 @@
 					<div class="form-fan">
 					  <label class="terms">Terms and Conditions</label>
 					</div>
-					<div>
+					<div class="submit">
 					  <input type="submit" value="Submit">
 					</div>
 				</form>
@@ -112,7 +118,7 @@
 		  </section>
 		<!--END CONTACT-->
 		<!--FOOTER-->
-		  <div>
+		  <div id="footer">
 			&copy; 2021
 		  </div>
 		<!--END FOOTER-->
