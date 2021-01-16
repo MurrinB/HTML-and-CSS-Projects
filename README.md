@@ -2,7 +2,7 @@
 ## Introduction
 This is a display of sample websites I made using HTML and CSS.
 ## Projects
-### Florence Oregon
+### <a href="https://github.com/MurrinB/HTML-and-CSS-Projects/tree/main/HTML_Main_Project">Florence Oregon</a>
 This page is an example home page for a Travel Guide to FLorence Oregon. It's styled using CSS and contains a navbar, image containers, and a form.
 
 ### Movie Theater Site
