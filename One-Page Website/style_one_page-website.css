@@ -1,4 +1,8 @@
 /* GILMORE GIRL STYLES */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 14px;
     margin: 0;
