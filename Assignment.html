@@ -2,15 +2,45 @@
 <html lang="en">
 	<head>
 		<title>My Page About Nothing!</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<meta charset= "utf-8">
-		<h1> Everything About Nothing </h1>
+		<h1 style="font-size:8vw;"> Everything About Nothing </h1>
+		<style>
+			body {
+				opacity: 1;
+				transition: 1s opacity;
+			}
+	
+			body.fade-out {
+				opacity: 0;
+				transition: none;
+			}
+
+			
+		</style>
+
+<script>
+	function validateForm() {
+		var x = document.forms["myForm"]["telephone"].value;
+		if (x == "") {
+			alert("Phone number must be filled out");
+			return false;
+		}
+	}
+</script>
 	</head>
+	
 <nav>
   <a href="file:///C:/Users/Britnee%20Murrin/GitHub/HTML-and-CSS-Projects/Assignment.html">HOME</a> |
   <a href="file:///C:/Users/Britnee%20Murrin/GitHub/HTML-and-CSS-Projects/Dog.html">PUPPIES</a> |
   <a href="file:///C:/Users/Britnee%20Murrin/GitHub/HTML-and-CSS-Projects/Dog_Video.html">DOG VIDEO</a>
 </nav>
 	<body>
+		<script>document.body.className += 'fade-out';
+			$(function() {
+				$('body').removeClass('fade-out');
+			});
+		</script>
 		<h3> To Write About Nothing </h3>
 		<p>It feels a little Alice in Wonderland to try and make a page about nothing. Doesn't that mean the page is really about something?</p>
 		<h3> Seinfeld Reference </h3>
@@ -29,7 +59,19 @@
 	</iframe>
   <!--ADD em TAG and NEW TAB LINK-->
 	<p><em>This text should be emphasized!</em></p>
+
+	<!--Form Phone Number-->
+
+	
+	<form name="myForm" onsubmit="return validateForm()" method="post">
+		<label for="phone">Phone Number</label><br>
+		<input type="text" name="telephone" value=""><br>
+		<input type="submit" value="Submit">
+	</form>
+	
 </body>
+
+
  <footer>
  <a href="https://www.linkedin.com/in/britnee-murrin-555859133/" target="new">Check out my LinkedIn!</a>
  </footer>
