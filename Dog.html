@@ -13,5 +13,25 @@
 	 <p> 
 		<img src="C:\Users\Britnee Murrin\GitHub\HTML-and-CSS-Projects\dogpicture.jpg">
 	 </p>
+
+	 <div id="JSON">
+		 <h2>Using JSON</h2>
+			<p id="paragraph"></p>
+			<p id="paragraph-2"></p>
+		 <script>
+			 var myObj, myJSON, text, obj;
+
+			 //storing data
+			 myObj = { "name":"Britnee", "age":28, "city":"Aurora" };
+			 myJSON = JSON.stringify(myObj);
+			 localStorage.setItem("testJSON", myJSON);
+
+			 //Retrieving data
+			 text = localStorage.getItem("testJSON");
+			 obj = JSON.parse(text);
+			 document.getElementById("paragraph").innerHTML = obj.name;
+			 document.getElementById("paragraph-2").innerHTML = myJSON;
+		 </script>
+	 </div>
 	</body>
 </html>
